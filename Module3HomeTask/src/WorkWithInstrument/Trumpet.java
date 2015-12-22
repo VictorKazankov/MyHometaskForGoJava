@@ -1,7 +1,7 @@
 package WorkWithInstrument;
 
 public class Trumpet extends Instrument{
-    int size;
+    private int size;
 
     void clean(){
 

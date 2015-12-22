@@ -2,7 +2,7 @@ package WorkWithFlowers;
 
 
 public class Chamomile extends Flower{
-    String species;
+    private String species;
 
     void applyInTea(){
 

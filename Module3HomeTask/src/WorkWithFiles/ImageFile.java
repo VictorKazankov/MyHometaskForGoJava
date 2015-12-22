@@ -1,8 +1,8 @@
 package WorkWithFiles;
 
 public class ImageFile extends File{
-    String format;
-    int resolution;
+    private String format;
+    private int resolution;
 
     void AddNewResolution(){
 

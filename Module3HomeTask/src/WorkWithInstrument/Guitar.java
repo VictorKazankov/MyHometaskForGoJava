@@ -1,8 +1,8 @@
 package WorkWithInstrument;
 
 public class Guitar extends Instrument{
-    String type;
-    int countString;
+    private String type;
+    private int countString;
 
     void changeTone(){
 

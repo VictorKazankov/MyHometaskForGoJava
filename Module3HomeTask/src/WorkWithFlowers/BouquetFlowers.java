@@ -2,10 +2,11 @@ package WorkWithFlowers;
 
 
 public class BouquetFlowers {
-    int rose;
-    int chamomile;
-    int astra;
-    Flower flower[];
+    private int rose;
+    private int chamomile;
+    private int astra;
+
+    public Flower flower[];
 
     void give(){
 

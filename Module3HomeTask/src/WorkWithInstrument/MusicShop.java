@@ -2,5 +2,5 @@ package WorkWithInstrument;
 
 
 public class MusicShop {
-    Instrument instrument;
+    public Instrument instrument[];
 }

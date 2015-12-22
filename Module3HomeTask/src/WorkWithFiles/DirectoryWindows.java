@@ -1,10 +1,11 @@
 package WorkWithFiles;
 
 public class DirectoryWindows {
-    float size;
-    String path;
-    String name;
-    File file[];
+    private float size;
+    private String path;
+    public String name;
+
+    public File file[];
 
     //This method return new name of file
     String changeName(){

@@ -1,7 +1,7 @@
 package WorkWithFlowers;
 
 public class Rose extends Flower{
-    int countNeedles;
+    private int countNeedles;
 
     void grow(){
 

@@ -1,7 +1,7 @@
 package WorkWithFlowers;
 
 public class Tulip extends Flower{
-    float lengthAfterCut;
+    private float lengthAfterCut;
 
     void smell(){
 

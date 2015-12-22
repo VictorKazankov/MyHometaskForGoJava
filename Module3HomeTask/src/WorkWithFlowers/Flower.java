@@ -1,10 +1,10 @@
 package WorkWithFlowers;
 
 public class Flower {
-    int age;
-    String color;
-    int countPetal;
-    float length;
+    protected int age;
+    protected String color;
+    protected int countPetal;
+    protected float length;
 
     void sale(){
 

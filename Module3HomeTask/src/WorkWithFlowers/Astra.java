@@ -1,7 +1,7 @@
 package WorkWithFlowers;
 
 public class Astra extends Flower{
-    String sort;
+    private String sort;
 
     void Plant(){
 
