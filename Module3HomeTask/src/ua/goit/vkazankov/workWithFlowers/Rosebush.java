@@ -1,7 +1,7 @@
-package WorkWithFlowers;
+package ua.goit.vkazankov.workWithFlowers;
 
 public class Rosebush {
-    int countFlowers;
+    private int countFlowers;
     private Rose rose[];
 
     void split(){

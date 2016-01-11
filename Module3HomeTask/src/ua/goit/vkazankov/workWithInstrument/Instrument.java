@@ -1,8 +1,8 @@
-package WorkWithInstrument;
+package ua.goit.vkazankov.workWithInstrument;
 
 public class Instrument {
-    String owner;
-    String name;
+    protected String owner;
+    protected String name;
 
     String changeType(){
         return name;

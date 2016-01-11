@@ -1,8 +1,8 @@
-package WorkWithFiles;
+package ua.goit.vkazankov.workWithFiles;
 
 public class TextFile extends File{
-    String type;
-    int countStrings;
+    private String type;
+    public int countStrings;
 
     // This is method returning number string
     int addString(){
