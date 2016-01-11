@@ -5,8 +5,6 @@ public class Squares {
      * heightTrangle - Trangle height
      * Formula for calc: Square = 1 / 2 * basicTrangle * heightTrangle
      */
-    private float basicTrangle;
-    private float heightTrangle;
     public float resultSquareForTrangle;
 
     /** Rectangle
@@ -24,63 +22,23 @@ public class Squares {
      * Formula for calc: Square = Pi * radius * radius
      */
     private float radius;
-    private float Pi;
+    private float Pi = (float) Math.PI;
     public float resultSquareCircle;
 
-    //////////////////////////////////////////////////////
-
-    Squares(float basicTrangle, float heightTrangle,
-            float firstSideRectangle, float secondSideRectangle,
-            float radius, float Pi){
-
-        this.basicTrangle = basicTrangle;
-        this.heightTrangle = heightTrangle;
-
-        this.firstSideRectangle = firstSideRectangle;
-        this.secondSideRectangle = secondSideRectangle;
-
-        this.radius = radius;
-        this.Pi = 3.1415f;
-
-    }
 
     //////////////////////////////////////////////////////
-    public float getSquareForTrangle(){
+    public float getSquareForTrangle( float basicTrangle, float heightTrangle){
         return resultSquareForTrangle = (1f / 2f) * basicTrangle * heightTrangle;
     }
 
-    public float getSquareForRectangle(){
+    public float getSquareForRectangle(float firstSideRectangle, float secondSideRectangle){
         return resultSquareForRectangle = firstSideRectangle * secondSideRectangle;
     }
 
-    public float getSquareCircle(){
+    public float getSquareCircle(float radius, float Pi){
         return resultSquareCircle = Pi * radius * radius;
     }
     //////////////////////////////////////////////////////
 
-
-    public float getBasicTrangle() {
-        return basicTrangle;
-    }
-
-    public float getHeightTrangle() {
-        return heightTrangle;
-    }
-
-    public float getFirstSideRectangle() {
-        return firstSideRectangle;
-    }
-
-    public float getSecondSideRectangle() {
-        return secondSideRectangle;
-    }
-
-    public float getRadius() {
-        return radius;
-    }
-
-    public float getPi() {
-        return Pi;
-    }
 
 }
