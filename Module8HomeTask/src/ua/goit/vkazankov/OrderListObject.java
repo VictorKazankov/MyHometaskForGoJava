@@ -2,25 +2,27 @@ package ua.goit.vkazankov;
 
 import ua.goit.vkazankov.ClassForCollection.*;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.PriorityQueue;
-import java.util.Queue;
+import java.util.*;
 
 
 public class OrderListObject {
     public static void main(String[] args) {
 
-        Queue<Flower> queue = new LinkedList<>();
+        Set<Flower> sortSet = new TreeSet<Flower>(new Comparator<Flower>() {
+            @Override
+            public int compare(Flower o1, Flower o2) {
+                return o1.toString().compareTo(o2.toString());
+            }
+        });
 
-        queue.add(new Astra("Astra"));
-        queue.add(new Chamomile("Chamomile"));
-        queue.add(new Rose("Rose"));
-        queue.add(new Tulip("Tulip"));
+        sortSet.add(new Chamomile("Astra"));
+        sortSet.add(new Astra("Chamomile"));
+        sortSet.add(new Tulip("Rose"));
+        sortSet.add(new Rose("Tulip"));
 
 
-        for (Flower c : queue) {
-            System.out.println(c.toString());
+        for (Flower c : sortSet) {
+            System.out.println(c);
         }
 
     }
